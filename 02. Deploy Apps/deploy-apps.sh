@@ -9,8 +9,8 @@ else
     sed -i "s/REPLACE_ME/${1}/g" ./nodejs_lic/nodejs_lic.yaml
 fi
 
-kubectl apply -f crasher/crasher.yaml -n demo
-kubectl apply -f nginx/deployment-nginx.yaml -n demo
+#kubectl apply -f crasher/crasher.yaml -n demo
+#kubectl apply -f nginx/deployment-nginx.yaml -n demo
 kubectl apply -f prometheus_metrics/pod.yaml -n demo
 kubectl apply -f nodejs_lic/nodejs_lic.yaml -n demo
 
